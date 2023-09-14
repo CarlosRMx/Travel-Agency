@@ -23,16 +23,20 @@ module.exports = {
         'primary': '#CC2D4A',
         'secondary': '#8FA206',
         'tertiary': '#61AEC9',
-        'text-primary': '#000000',
-        'text-secondary': '#ffffff'
+        'auxiliar': '#000000',
+        'complement': '#ffffff'
       },
       textColor:{
-        'primary':'#000000',
-        'secondary':'#ffffff',
-        'tertiary': '#CC2D4A',
+        'auxiliar': '#CC2D4A',
+        'secondary': '#8FA206',
+        'primary': '#000000',
+        'complement': '#ffffff',
       },
       fontFamily:{
         Montserrat:['Montserrat', 'sans-serif']
+      },
+      minWidth: {
+        'md': '280px',
       }
     },
   },
