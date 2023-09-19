@@ -37,6 +37,7 @@ module.exports = {
       },
       minWidth: {
         'md': '280px',
+        'sm': '224px'
       }
     },
   },
