@@ -24,13 +24,14 @@ module.exports = {
         'secondary': '#8FA206',
         'tertiary': '#61AEC9',
         'auxiliar': '#000000',
-        'complement': '#ffffff'
+        'complement': '#ffffff',
       },
       textColor:{
         'auxiliar': '#CC2D4A',
         'secondary': '#8FA206',
         'primary': '#000000',
         'complement': '#ffffff',
+        'tertiary':'#CCCCCC'
       },
       fontFamily:{
         Montserrat:['Montserrat', 'sans-serif']
