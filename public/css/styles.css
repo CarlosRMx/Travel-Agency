@@ -933,17 +933,27 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-@media (min-width: 1024px) {
-  .lg\:bottom-32 {
-    bottom: 8rem;
+@media (min-width: 320px) {
+  .mb\:hidden {
+    display: none;
   }
+}
 
+@media (min-width: 1024px) {
   .lg\:bottom-64 {
     bottom: 16rem;
   }
 
   .lg\:left-10 {
     left: 2.5rem;
+  }
+
+  .lg\:block {
+    display: block;
+  }
+
+  .lg\:flex {
+    display: flex;
   }
 
   .lg\:hidden {
