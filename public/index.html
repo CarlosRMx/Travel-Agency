@@ -12,20 +12,49 @@
 </head>
 <body class="font-Montserrat">
     <header>
-        <nav></nav>
+        <nav class="flex justify-between items-center w-full h-16 p-4 bg-complement shadow-sm">
+            <div>
+                <h2 class="font-bold text-auxiliar text-lg">Platzi Travel</h2>
+            </div>
+            <ul class="flex justify-between w-1/6  text-auxiliar font-semibold">
+                <li>
+                    <a href="">Locations</a>
+                </li>
+                <li>
+                    <a href="">Stays</a>
+                </li>
+                <li>
+                    <a href="">FAQs</a>
+                </li>
+                <li>
+                    <a href="">About Us</a>
+                </li>
+            </ul>
+
+            <div class="flex gap-6 pr-8">
+                <i class="fa-solid fa-magnifying-glass text-tertiary text-2xl transition duration-500 ease-in-out 
+                hover:text-auxiliar  hover:-translate-y-1 hover:scale-110"></i>
+                <i class="fa-solid fa-moon text-tertiary text-2xl transition duration-500 ease-in-out 
+                hover:text-auxiliar  hover:-translate-y-1 hover:scale-110"></i>
+                <i class="fa-solid fa-user text-tertiary text-2xl transition duration-500 ease-in-out 
+                hover:text-auxiliar  hover:-translate-y-1 hover:scale-110"></i>
+
+            </div>
+        </nav>
     </header>
 
     <main>
         <section id="home">
-            <figure class="relative w-full max-w-lg">
-                <img class="object-cover" src="./img/sanFrancisco.jpg" alt="San Francisco">
-                <div class="absolute top-0 flex flex-col w-full px-4 py-6">
+            <figure class="relative w-full max-w-lg lg:max-w-full lg:h-120">
+                <img class="object-cover lg:h-full lg:w-full" src="./img/sanFrancisco.jpg" alt="San Francisco">
+                <div class="absolute top-0 flex flex-col w-full px-4 py-6 lg:hidden">
                     <span class="self-end flex justify-center items-center w-14 h-6 p-4 bg-complement rounded-full">
                         <i class="fa-solid fa-moon text-lg text-auxiliar"></i>
                     </span>
                     <input class="mt-6 w-full px-4 py-3 text-center rounded-full shadow-sm" type="text" placeholder="🔍 San Francisco">
                 </div>
-                <div class="flex justify-center w-full absolute bottom-14">
+                <h1 class="absolute top-36 w-4/12 left-10 text-3xl font-bold">Find More Locations like this</h1>
+                <div class="flex justify-center w-full absolute bottom-14 lg:justify-start lg:bottom-64 lg:left-10">
                     <button 
                         class="px-12 py-3 font-semibold text-lg text-auxiliar
                          bg-complement rounded-full shadow-md 
@@ -159,7 +188,8 @@
     </footer>
 
     <!-- tabBar -->
-    <div class="fixed flex items-center justify-around w-full h-16 p-4 left-0 bottom-0 z-10 bg-complement shadow-md border border-t-2" id="tabBar">
+    <div class="fixed flex items-center justify-around w-full h-16 p-4 left-0 bottom-0 
+        z-10 bg-complement shadow-md border border-t-2 lg:hidden" id="tabBar">
         <div class="flex gap-12 items-center">
             <a href="#home">
                 <i class="fa-solid fa-house text-tertiary text-3xl transition duration-500 ease-in-out 

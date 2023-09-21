@@ -39,7 +39,13 @@ module.exports = {
       minWidth: {
         'md': '280px',
         'sm': '224px'
-      }
+      },
+      width:{
+        '1/6':'40%'
+      },
+      height:{
+        '120':'540px'
+      },
     },
   },
   plugins: [],
