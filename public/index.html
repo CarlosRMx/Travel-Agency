@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="./css/styles.css">
     <title>Document</title>
 </head>
-<body class="font-Montserrat">
+<body class="font-Montserrat lg:overflow-x-hidden">
     <header>
-        <nav class="lg:flex justify-between items-center w-full h-16 p-4 bg-complement shadow-sm mb:hidden">
+        <nav class="lg:flex md:flex justify-between items-center w-full h-16 p-4
+         bg-complement shadow-sm mb:hidden">
             <div>
                 <h2 class="font-bold text-auxiliar text-lg">Platzi Travel</h2>
             </div>
@@ -45,15 +46,15 @@
 
     <main>
         <section id="home">
-            <figure class="relative w-full max-w-lg lg:max-w-full lg:h-120">
-                <img class="object-cover lg:h-full lg:w-full" src="./img/sanFrancisco.jpg" alt="San Francisco">
-                <div class="absolute top-0 flex flex-col w-full px-4 py-6 lg:hidden">
+            <figure class="relative w-full max-w-lg md:max-w-full md:h-120">
+                <img class="object-cover md:h-full md:w-full" src="./img/sanFrancisco.jpg" alt="San Francisco">
+                <div class="absolute top-0 flex flex-col w-full px-4 py-6 md:hidden">
                     <span class="self-end flex justify-center items-center w-14 h-6 p-4 bg-complement rounded-full">
                         <i class="fa-solid fa-moon text-lg text-auxiliar"></i>
                     </span>
                     <input class="mt-6 w-full px-4 py-3 text-center rounded-full shadow-sm" type="text" placeholder="🔍 San Francisco">
                 </div>
-                <h1 class="absolute top-36 w-4/12 left-10 text-3xl font-bold mb:hidden lg:block">Find More Locations like this</h1>
+                <h1 class="absolute top-36 w-4/12 left-10 text-3xl font-bold md:w-1/4 mb:hidden md:block">Find More Locations like this</h1>
                 <div class="flex justify-center w-full absolute bottom-14 lg:justify-start lg:bottom-64 lg:left-10">
                     <button 
                         class="px-12 py-3 font-semibold text-lg text-auxiliar
@@ -115,31 +116,35 @@
                 </article>
             </div>
         </section>
-        <section class="p-5" id="trendingSites">
-            <h2 class="text-2xl text-auxiliar font-semibold">Trending stays</h2>
-            <div class="flex flex-col items-center gap-8 mt-8">
-                <figure class="relative w-64 h-96 max-h-96 min-w-md max-w-64">
-                    <img src="./img/chicago.jpg" class="w-full h-full rounded-xl object-cover" alt="Chicago">
+        <section class="p-5 lg:flex lg:flex-col lg:items-center" id="trendingSites">
+            <h2 class="text-2xl text-auxiliar font-semibold lg:self-start">Trending stays</h2>
+            <div class="flex flex-col items-center gap-8 mt-8
+            md:grid md:grid-cols-2 md:grid-rows-2 md:justify-items-center lg:grid 
+            lg:grid-cols-3 lg:grid-rows-3 lg:max-w-6xl">
+                <figure class="relative w-64 h-96 max-h-96 min-w-md max-w-64 md:w-full lg:col-start-1 lg:col-end-4 lg:w-full">
+                    <img src="./img/chicago.jpg" class="w-full h-full rounded-xl object-cover 
+                    md:w-full lg:w-full" alt="Chicago">
                     <div class="absolute top-10 w-4/5 p-4">
                         <h3 class="mb-2 text-2xl font-bold text-complement">Chicago</h3>
                         <p class="font-medium text-md text-complement">2 rooms, bathroom and kitchen.</p>
                     </div>
                 </figure>
-                <figure class="relative w-64 h-96 max-h-96 min-w-md max-w-64">
-                    <img src="./img/LA.jpg" class="w-full h-full rounded-xl object-cover" alt="Los Angeles">
+                <figure class="relative w-64 h-96 max-h-96 min-w-md max-w-64  md:w-full lg:w-full">
+                    <img src="./img/LA.jpg" class="w-full h-full rounded-xl object-cover md:h-full 
+                    lg:col-start-1 lg:col-end-2 lg:row-start-2 lg:row-end-4 lg:h-screen" alt="Los Angeles">
                     <div class="absolute top-10 w-4/5 p-4">
                         <h3 class="mb-2 text-2xl font-bold text-complement">Los Angeles</h3>
                         <p class="font-medium text-md text-complement">4 rooms, 3 bathrooms, kitchen and private pool.</p>
                     </div>
                 </figure>
-                <figure class="relative w-64 h-96 max-h-96 min-w-md max-w-64">
+                <figure class="relative w-64 h-96 max-h-96 min-w-md max-w-64 md:w-full lg:col-start-2 lg:col-end-4  lg:w-full">
                     <img src="./img/miami.jpg" class="w-full h-full rounded-xl object-cover" alt="Miami">
                     <div class="absolute top-10 w-4/5 p-4">
                         <h3 class="mb-2 text-2xl font-bold text-complement">Miami</h3>
                         <p class="font-medium text-md text-complement">3 rooms, 2 bathrooms, kitchen and amazing sea view.</p>
                     </div>
                 </figure>
-                <figure class="relative w-64 h-96 max-h-96 min-w-md max-w-64">
+                <figure class="relative w-64 h-96 max-h-96 min-w-md max-w-64 md:w-full lg:row-start-3 lg:row-end-4 lg:col-start-2 lg:col-end-4 lg:w-full">
                     <img src="./img/bali.jpg" class="w-full h-full rounded-xl object-cover" alt="Miami">
                     <div class="absolute top-10 w-4/5 p-4">
                         <h3 class="mb-2 text-2xl font-bold text-complement">Bali</h3>
@@ -150,28 +155,28 @@
         </section>
         <section class="p-5" id="faqs">
             <h2 class="text-2xl text-auxiliar font-semibold">FAQs</h2>
-            <div class="flex flex-col items-start justify-center gap-4 mt-8 max-w-md">
+            <div class="flex flex-col items-start justify-center gap-4 mt-8 max-w-md lg:max-w-2xl">
                 <div>
-                    <h3 class="mb-2 text-auxiliar font-semibold text-lg" >Payment Methods</h3>
-                    <p>We accept VISA, MasterCard, American Express, Paypal and Binance</p>
+                    <h3 class="mb-2 text-auxiliar font-semibold text-lg lg:text-xl" >Payment Methods</h3>
+                    <p class="lg:text-xl">We accept VISA, MasterCard, American Express, Paypal and Binance</p>
                 </div>
                 <div>
-                    <h3 class="mb-2 text-auxiliar font-semibold text-lg" >Cancellation Policy</h3>
-                    <p>We accept VISA, MasterCard, American Express, Paypal and Binance</p>
+                    <h3 class="mb-2 text-auxiliar font-semibold text-lg lg:text-xl" >Cancellation Policy</h3>
+                    <p class="lg:text-xl">We accept VISA, MasterCard, American Express, Paypal and Binance</p>
                 </div>
                 <div>
-                    <h3 class="mb-2 text-auxiliar font-semibold text-lg" >Long Stays</h3>
-                    <p>We accept VISA, MasterCard, American Express, Paypal and Binance</p>
+                    <h3 class="mb-2 text-auxiliar font-semibold text-lg lg:text-xl" >Long Stays</h3>
+                    <p class="lg:text-xl">We accept VISA, MasterCard, American Express, Paypal and Binance</p>
                 </div>
                 <div>
-                    <h3 class="mb-2 text-auxiliar font-semibold text-lg" >Health insurance</h3>
-                    <p>We accept VISA, MasterCard, American Express, Paypal and Binance</p>
+                    <h3 class="mb-2 text-auxiliar font-semibold text-lg lg:text-xl" >Health insurance</h3>
+                    <p class="lg:text-xl">We accept VISA, MasterCard, American Express, Paypal and Binance</p>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="w-full mt-8 mb-14 p-5 bg-stone-50 text-tertiary border border-t-2">
+    <footer class="w-full mt-8 mb-14 p-5 bg-stone-50 text-tertiary border border-t-2 md:mb-0">
         <h2 class="text-2xl font-semibold">About Us</h2>
         <div class="flex flex-col justify-center gap-2 mt-6">
             <a class="text-lg" href="#">Investors</a>
@@ -189,7 +194,7 @@
 
     <!-- tabBar -->
     <div class="fixed flex items-center justify-around w-full h-16 p-4 left-0 bottom-0 
-        z-10 bg-complement shadow-md border border-t-2 lg:hidden" id="tabBar">
+        z-10 bg-complement shadow-md border border-t-2 md:hidden" id="tabBar">
         <div class="flex gap-12 items-center">
             <a href="#home">
                 <i class="fa-solid fa-house text-tertiary text-3xl transition duration-500 ease-in-out 
