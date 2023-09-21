@@ -28,7 +28,7 @@ module.exports = {
       },
       textColor:{
         'auxiliar': '#CC2D4A',
-        'secondary': '#8FA206',
+        'secondary': '#61AEC9',
         'primary': '#000000',
         'complement': '#ffffff',
         'tertiary':'#CCCCCC'
