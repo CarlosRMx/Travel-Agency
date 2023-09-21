@@ -38,7 +38,8 @@ module.exports = {
       },
       minWidth: {
         'md': '280px',
-        'sm': '224px'
+        'sm': '224px',
+        '4sm':'30%'
       },
       width:{
         '1/6':'40%'
