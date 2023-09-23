@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="scroll-smooth" lang="en">
+<html class="scroll-smooth" lang="en" x-data="{dark:false}" x-bind:class="dark ? 'dark' : ''">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -49,7 +49,8 @@
             <figure class="relative w-full max-w-lg md:max-w-full md:h-120">
                 <img class="object-cover md:h-full md:w-full" src="./img/sanFrancisco.jpg" alt="San Francisco">
                 <div class="absolute top-0 flex flex-col w-full px-4 py-6 md:hidden">
-                    <span class="self-end flex justify-center items-center w-14 h-6 p-4 bg-complement rounded-full">
+                    <span class="self-end flex justify-center items-center w-14 h-6 p-4
+                     bg-complement rounded-full ">
                         <i class="fa-solid fa-moon text-lg text-auxiliar"></i>
                     </span>
                     <input class="mt-6 w-full px-4 py-3 text-center rounded-full shadow-sm" type="text" placeholder="🔍 San Francisco">
@@ -221,5 +222,6 @@
         </div>
     </div>
 
+    <script src="//unpkg.com/alpinejs" defer></script>
 </body>
 </html>

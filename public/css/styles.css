@@ -730,10 +730,6 @@ video {
   gap: 2rem;
 }
 
-.self-start {
-  align-self: flex-start;
-}
-
 .self-end {
   align-self: flex-end;
 }
@@ -1007,10 +1003,6 @@ video {
 }
 
 @media (min-width: 1024px) {
-  .lg\:fixed {
-    position: fixed;
-  }
-
   .lg\:bottom-64 {
     bottom: 16rem;
   }
@@ -1043,20 +1035,12 @@ video {
     grid-row-end: 4;
   }
 
-  .lg\:row-end-3 {
-    grid-row-end: 3;
-  }
-
   .lg\:flex {
     display: flex;
   }
 
   .lg\:grid {
     display: grid;
-  }
-
-  .lg\:h-auto {
-    height: auto;
   }
 
   .lg\:h-screen {
@@ -1107,18 +1091,13 @@ video {
     overflow-x: hidden;
   }
 
-  .lg\:text-xl {
-    font-size: 1.25rem;
+  .lg\:text-lg {
+    font-size: 1.125rem;
     line-height: 1.75rem;
   }
 
-  .lg\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-
-  .lg\:text-lg {
-    font-size: 1.125rem;
+  .lg\:text-xl {
+    font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }
