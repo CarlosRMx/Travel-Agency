@@ -1007,6 +1007,10 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:fixed {
+    position: fixed;
+  }
+
   .lg\:bottom-64 {
     bottom: 16rem;
   }
