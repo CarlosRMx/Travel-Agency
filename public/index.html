@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="scroll-smooth dark" lang="en">
+<html class="scroll-smooth" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,7 +36,7 @@
                 <i class="fa-solid fa-magnifying-glass text-tertiary text-2xl transition duration-500 ease-in-out 
                 hover:text-auxiliar  hover:-translate-y-1 hover:scale-110"></i>
                 <i class="fa-solid fa-moon text-tertiary text-2xl transition duration-500 ease-in-out 
-                hover:text-auxiliar  hover:-translate-y-1 hover:scale-110"></i>
+                hover:text-auxiliar  hover:-translate-y-1 hover:scale-110" id="btnDark"></i>
                 <i class="fa-solid fa-user text-tertiary text-2xl transition duration-500 ease-in-out 
                 hover:text-auxiliar  hover:-translate-y-1 hover:scale-110"></i>
 
@@ -50,7 +50,7 @@
                 <img class="object-cover md:h-full md:w-full" src="./img/sanFrancisco.jpg" alt="San Francisco">
                 <div class="absolute top-0 flex flex-col w-full px-4 py-6 md:hidden">
                     <button class="self-end flex justify-center items-center w-14 h-6 p-4
-                     bg-complement rounded-full ">
+                     bg-complement rounded-full" id="darkModeMobile">
                         <i class="fa-solid fa-moon text-lg text-auxiliar dark:text-black/95"></i>
                     </button>
                     <input class="mt-6 w-full px-4 py-3 text-center rounded-full shadow-sm" type="text" placeholder="🔍 San Francisco">
@@ -230,6 +230,6 @@
         </div>
     </div>
 
-    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
